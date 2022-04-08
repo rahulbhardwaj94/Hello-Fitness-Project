@@ -1,0 +1,340 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Black Head Div */
+
+.top-black {
+    width: 100%;
+    height: 5rem;
+    background-color: #000;
+}
+
+/* Header */
+
+header {
+    padding: 1px;
+    justify-content: space-around;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+}
+
+/* Logo */
+
+.logo {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    transform: rotate(1deg) scale(1);
+    transition: 1.5s ease-in-out;
+}
+
+header .logo:hover{
+    transform: rotate(360deg) scale(2);
+    transition: 1.5s ease-in;
+}
+
+/* Nav Starts */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 35rem;
+
+}
+
+/* Links */
+
+.nav-links {
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 2rem;
+}
+
+.nav-links li a img:hover{
+    box-shadow: 10px 10px 30px grey;
+}
+
+
+.nav-links li a .li-text:hover{
+    text-shadow: 5px 5px 3px grey;
+    font-weight: bold;
+}
+
+
+ul li a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+
+ul li a:hover {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 9px;
+}
+
+/* underline animations */
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+ul li a:hover::before {
+    transform: scaleX(1);
+    
+}
+
+/* user Button  */
+
+.a-btn {
+    display: flex;
+    text-decoration: none;
+    padding: 1.5rem;
+    margin-left: 25rem;
+}
+
+.btn {
+    padding: 10px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    color: rgb(3, 3, 3);
+    text-decoration: underline;
+    background-color: rgb(182, 150, 182);
+    transition: 1s;
+
+}
+
+.a-btn button {
+    display: inline-block;
+}
+
+.a-btn .btn img {
+    float: left;
+}
+
+.a-btn .btn span {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* Nav Ends */
+
+
+/* Header Ends */
+
+
+/* Heading h1 */
+
+h1 {
+    margin: 2rem 7rem;
+}
+
+
+/* Images Container */
+
+.outer-container {
+    margin: 1px;
+    width: 100rem;
+    height: 100rem;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-left: 5rem;
+}
+
+
+.inner-container {
+    display: flex;
+    border-radius: 30px;
+    width: 160rem;
+    height: 160rem;
+    position: relative;
+}
+
+.inner-container img {
+    width: 25%;
+    transform: scale(0.8);
+    transition: 0.8s;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.inner-container img:hover {
+    width: 40%;
+    transform: scale(1);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+/* Image 1 -- Strength */
+
+.inner-container .img1 {
+    transform: rotateY(20deg);
+    transform: translateX(-2rem);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+
+.inner-container .strength {
+    margin-left: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+    z-index: 5;
+}
+
+.outer-container .inner-container .arrow1 img{
+    position: absolute;
+    top: 2rem;
+    left: 25rem;
+    background-color: white;
+    width: 30px !important;
+    height: 30px !important;
+    text-transform: uppercase;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+/* Image 2 -- Mobility */
+
+.inner-container .img2 {
+    transform: rotateY(10deg);
+    transform: translateX(-12rem);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+
+
+.inner-container .mobility {
+    margin-left: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 35rem;
+    font-size: 1.6rem;
+    color: rgb(245, 241, 241);
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+
+.outer-container .inner-container .arrow2 img{
+    position: absolute;
+    top: 2rem;
+    left: 55rem;
+    background-color: white;
+    border-radius: 20px;
+    width: 30px !important;
+    height: 30px !important;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/* Image 3 -- Drills */
+
+.inner-container .img3 {
+    transform: rotateY(1deg);
+    transform: translateX(-16rem);
+    transition: 1s ease;
+    z-index: 1;
+}
+
+
+.inner-container .drills {
+    margin-left: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 65rem;
+    font-size: 1.6rem;
+    color: rgb(245, 241, 241);
+    text-transform: uppercase;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+.outer-container .inner-container .arrow3 img{
+    position: absolute;
+    top: 2rem;
+    left: 90rem;
+    background-color: white;
+    border-radius: 20px;
+    width: 30px !important;
+    height: 30px !important;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+/*  */
+
+.inner-container .img1:hover {
+    width: 30%;
+    transform: translateX(3rem) scale(1.05);
+    z-index: 4;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.outer-container .inner-container .arrow3 img{
+    margin-left: 5rem;
+    z-index: 10;
+}
+
+/*  */
+.inner-container .img2:hover {
+    width: 30%;
+    transform: translateX(-5rem) scale(1.05);
+    transition: 0.5s ease;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.inner-container .img3:hover {
+    width: 30%;
+    transform: translateX(-25rem) scale(1.05);
+    transition: 0.5s ease;
+    z-index: 2;
+    overflow: hidden;
+}
